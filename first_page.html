@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <script>
+        let name = "Imran";
+        let course = "CEE Digital Essentials";
+        let student = true;
+        
+        //alert("Hello "+ name + "! This is "+ course);
+
+        function greet(){
+            console.log("Welcome",name, "to", course, student);
+        }
+        greet();
+
+    </script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navigationbar {
+            background-color: darkseagreen;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .navlinks {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navlinks li {
+            margin: 0;
+        }
+
+        .navlinks li a {
+            color: rgb(24, 87, 168);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: block;
+        }
+
+        .navlinks li a:hover {
+            background-color: rgb(134, 244, 248);
+        }
+
+        .content {
+            background-color: blanchedalmond;
+            padding: 20px;
+            margin: 10px auto;
+            border-radius: 10px;
+            border: 1px solid black;
+            max-width: 800px;
+        }
+        .container {
+            width: 80%;
+            height: 500px;
+            margin: 0 auto;
+            border: 10px solid;
+            display:flex;
+            flex-direction: row;
+            justify-content:center;
+            align-items: baseline;
+            flex-wrap: wrap;
+
+        }
+
+        .item-1{
+            width: 125px;
+            height: 125px;
+            background-color:rgb(134, 244, 248);
+            font-weight: 700;
+            text-align: center;
+            border: 10px solid;
+            border-radius: 10px;
+        }
+
+        .item-2{
+            width: 125px;
+            height: 125px;
+            background-color: rgb(15, 121, 221);
+            font-weight: 700;
+            text-align: center;
+            border: 10px solid;
+            border-radius: 10px;
+        }
+
+        .item-3{
+            width: 125px;
+            height: 125px;
+            background-color: rgb(243, 147, 22);
+            font-weight: 700;
+            text-align: center;
+            border: 10px solid;
+            border-radius: 10px;
+        }
+        .item-4{
+            width: 125px;
+            height: 125px;
+            background-color: rgb(192, 13, 13);
+            font-weight: 700;
+            text-align: center;
+            border: 10px solid;
+            border-radius: 10px;
+        }
+        .item-5{
+            width: 125px;
+            height: 125px;
+            background-color: rgb(68, 199, 96);
+            font-weight: 700;
+            text-align: center;
+            border: 10px solid;
+            border-radius: 10px;
+        }
+        .item-6{
+            width: 125px;
+            height: 125px;
+            background-color: rgb(64, 134, 119);
+            font-weight: 700;
+            text-align: center;
+            border: 10px solid;
+            border-radius: 10px;
+        }
+        .item-7{
+            width: 125px;
+            height: 125px;
+            background-color: rgb(58, 22, 219);
+            font-weight: 700;
+            text-align: center;
+            border: 10px solid;
+            border-radius: 10px;
+        }
+        .item-8{
+            width: 125px;
+            height: 125px;
+            background-color: rgb(136, 83, 141);
+            font-weight: 700;
+            text-align: center;
+            border: 10px solid;
+            border-radius: 10px;
+        }
+        .item-9{
+            width: 125px;
+            height: 125px;
+            background-color: rgb(143, 90, 116);
+            font-weight: 700;
+            text-align: center;
+            border: 10px solid;
+            border-radius: 10px;
+        }
+
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        footer {
+            background-color: darkseagreen;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        footer ul li a {
+            color: rgb(24, 87, 168);
+            text-decoration: none;
+        }
+
+        footer section {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .navlinks {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navlinks li {
+                margin-bottom: 10px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navlinks li a {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+
+            footer ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navigationbar">
+            <nav>
+                <ul class="navlinks">
+                    <li><a href="#home">First Page</a></li>
+                    <li><a href="#about">Second Page</a></li>
+                    <li><a href="#services">Third Page</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <p class="content">This is my first webpage main section.</p>
+        
+    </main>
+    <div class = "container">
+        <div class = "item-1">Item 1
+            <img src="image.jpg" alt="A journey">
+        </div>
+        <div class = "item-2">Item 2</div>
+        <div class = "item-3">Item 3</div>
+        <div class = "item-4">Item 4</div>
+        <div class = "item-5">Item 5</div>
+        <div class = "item-6">Item 6</div>
+        <div class = "item-7">Item 7</div>
+        <div class = "item-8">Item 8</div>
+        <div class = "item-9">Item 9</div>
+    
+
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://x.com" target="_blank">X</a></li>
+        </ul>
+        <section>
+            <h1>Contact Us</h1>
+            <p>Email: <a href="mailto:Firstpage@ceetoronto.ca">Firstpage@ceetoronto.ca</a></p>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript practice</title>
+    <script>
+        let name = "Imran";
+        let course = "CEE Digital Essentials";
+        let student = true;
+        
+        //alert("Hello "+ name + "! This is "+ course);
+
+        function greet(){
+            console.log("Welcome",name, "to", course, student);
+        }
+        greet();
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("p1").textContent = "My name is " + name;
+            document.getElementById("p2").textContent = course;
+            document.getElementById("p3").textContent = student;
+
+            document.getElementById("mybutton").addEventListener("click", function() {
+                alert("Button was clicked!")
+        })
+        });
+
+        
+
+
+    </script>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <button id="mybutton">My Button</button>
+</body>
